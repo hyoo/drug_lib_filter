@@ -1,0 +1,17 @@
+# Setup
+```
+# create conda env & install rdkit and rd_filters
+conda install -c rdkit==2020.03.01
+pip install git+https://github.com/PatWalters/rd_filters.git
+```
+
+# Run
+```
+python run.py --in /lambda_stor/data/hsyoo/descriptors/ORD.input --out /lambda_stor/data/hsyoo/descriptors/ORD_filtered
+```
+
+# Run original version
+```
+rd_filters filter --in CANCER/test.smi --prefix CANCER/drug_1800_filtered/all --np 1 --rules rules/rules_all.json
+rd_filters filter --in CANCER/test.smi --prefix CANCER/drug_1800_filtered/pains --np 1 --rules rules/rules_pains.json
+```
