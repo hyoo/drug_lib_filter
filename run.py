@@ -13,12 +13,13 @@ import pandas as pd
 def filter(rf: RDFilters, rule_dict:dict, input_path: str, output_path: str):
     file_name = Path(input_path).stem
     print(f"Reading {input_path}")
-    orig_df = pd.read_feather(input_path)
+    orig_df = pd.read_feather(input_path, use_threads=False)
     input_data = list(orig_df[['SMILE','ID']].to_records(index=False))
  
     start_time = time.time()
     pool = Pool(16)
     res = list(pool.map(rf.evaluate, input_data))
+    pool.close()
     df = pd.DataFrame(res, columns=["SMILES", "NAME", "FILTER", "MW", "LogP", "HBD", "HBA", "TPSA", "Rot"])
     df_ok = df[
         (df.FILTER == "OK") &
@@ -84,7 +85,9 @@ def main():
     }
 
     input_files = load_file_list(args.input)
-    for input_file in input_files:
+    num_files = len(input_files)
+    for i, input_file in enumerate(input_files):
+        print(f"processing {i}/{num_files}")
         filter(rd_filter, rule_dict, input_file, args.out)
 
 
