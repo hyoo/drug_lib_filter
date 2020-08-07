@@ -484,7 +484,6 @@ C[C@@H](CO)N1C[C@@H](C)[C@@H](CN(C)CC2CCCCC2)Oc2ccc(NC(=O)Nc3c(C)noc3C)cc2C1=O 	
 CCOc1ccccc1N\N=C1C(=O)N(N=C\1C)c1nc(cs1)-c1ccccc1 	 CTRP.66
 C[C@H](CO)N1C[C@@H](C)[C@H](CN(C)Cc2ccc3OCOc3c2)Oc2c(NC(=O)c3ccncc3)cccc2C1=O 	 CTRP.67
 C[C@@H](NC(=O)C[C@@H]1CC[C@@H](NC(=O)CN2CCOCC2)[C@H](CO)O1)c1ccccc1 	 CTRP.68
--666 	 CTRP.69
 C[C@H](\N=C(\NC#N)Nc1cccc2ncccc12)c1ccccc1 	 CTRP.7
 CC(C)C[C@H](NC(=O)[C@H](C)NC(=O)[C@H](CCCCN)NC(=O)[C@H](CCCNC(N)=N)NC(C)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CC(O)=O)C(=O)NCC(=O)N[C@@H](C(C)C)C(=O)N[C@@]1(C)CCC\C=C/CCC[C@](C)(NC(=O)[C@H](Cc2cnc[nH]2)NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](CCCNC(N)=N)NC1=O)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1ccccc1)C(N)=O 	 CTRP.70
 C[C@@H](CO)N1C[C@H](C)[C@H](CN(C)C(=O)Cc2ccncc2)Oc3cc(C#Cc4ccccc4F)ccc3S1(=O)=O 	 CTRP.71
