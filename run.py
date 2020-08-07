@@ -73,7 +73,8 @@ def main():
     # initialize filter class
     alert_file_name = pkg_resources.resource_filename('rd_filters', "data/alert_collection.csv")
     rd_filter = RDFilters(alert_file_name)
-    rd_filter.build_rule_list(['PAINS'])
+    rule_list = ['BMS', 'Dundee', 'Glaxo', 'Inpharmatica', 'LINT', 'MLSMR', 'PAINS', 'SureChEMBL']
+    rd_filter.build_rule_list(rule_list)
     rule_dict = {
         "MW": [0, 500],
         "LogP": [-5, 5],
