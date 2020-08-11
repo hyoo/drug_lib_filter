@@ -88,8 +88,11 @@ def main():
     input_files = load_file_list(args.input)
     num_files = len(input_files)
     for i, input_file in enumerate(input_files):
-        print(f"processing {i}/{num_files}")
-        filter(rd_filter, rule_dict, input_file, args.out)
+        try:
+            print(f"processing {i}/{num_files}")
+            filter(rd_filter, rule_dict, input_file, args.out)
+        except:
+            print(f'Error in processing {input_file}')
 
 
 if __name__ == '__main__':
